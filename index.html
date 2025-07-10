@@ -51,42 +51,69 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
-      <div class="grid lg:grid-cols-5 gap-12 items-center">
-        <!-- Left Column - Content (40%) -->
-        <div class="lg:col-span-2 text-center lg:text-left">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <!-- Left Column - Content -->
+        <div class="text-center lg:text-left">
           <h1
-            class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+            class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight"
           >
             Turn phone addiction into
-            <span
-              class="bg-gradient-to-r from-wellness-500 to-hydration-500 bg-clip-text text-transparent"
-            >
-              hydration habit
-            </span>
+            <span class="gradient-text"> hydration habit </span>
           </h1>
 
-          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+          <p
+            class="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl"
+          >
             Sip & Scroll blocks your favorite apps until you take a selfie
             drinking water - turning every scroll session into a hydration win
           </p>
 
+          <!-- Social Proof -->
           <div
-            class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
+            class="flex items-center justify-center lg:justify-start gap-3 mb-8"
+          >
+            <div class="flex -space-x-1">
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-wellness-400 to-hydration-400 rounded-full flex items-center justify-center text-white text-sm"
+              >
+                😊
+              </div>
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-wellness-500 to-hydration-500 rounded-full flex items-center justify-center text-white text-sm"
+              >
+                🥤
+              </div>
+              <div
+                class="w-10 h-10 bg-gradient-to-r from-wellness-600 to-hydration-600 rounded-full flex items-center justify-center text-white text-sm"
+              >
+                📱
+              </div>
+            </div>
+            <span class="text-gray-600 font-medium">Join the movement</span>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
           >
             <button
-              class="bg-gradient-to-r from-wellness-500 to-hydration-500 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300 cursor-not-allowed opacity-80"
+              class="bg-gradient-to-r from-wellness-500 to-hydration-500 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300"
             >
-              Coming Soon to App Store
+              Get Notified When Available
             </button>
           </div>
         </div>
 
-        <!-- Right Column - Phone Mockups (60%) -->
-        <div class="lg:col-span-3 relative">
-          <div class="grid grid-cols-2 gap-6 lg:gap-8">
+        <!-- Right Column - Phone Mockups -->
+        <div class="relative">
+          <div class="grid grid-cols-2 gap-4 lg:gap-6">
             <!-- Screen 1 - Blocked App -->
-            <div class="phone-mockup-large floating-animation">
+            <div class="phone-mockup-large floating-animation relative">
+              <div
+                class="absolute -top-3 -left-3 w-8 h-8 bg-wellness-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10"
+              >
+                1
+              </div>
               <div class="phone-screen-large">
                 <img
                   src="images/app-screens/blocked-app.png"
@@ -98,9 +125,14 @@
 
             <!-- Screen 2 - Selfie Screen -->
             <div
-              class="phone-mockup-large floating-animation"
+              class="phone-mockup-large floating-animation relative"
               style="animation-delay: -1s"
             >
+              <div
+                class="absolute -top-3 -right-3 w-8 h-8 bg-wellness-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10"
+              >
+                2
+              </div>
               <div class="phone-screen-large">
                 <img
                   src="images/app-screens/selfie-screen.png"
@@ -112,9 +144,14 @@
 
             <!-- Screen 3 - Unlocked Apps -->
             <div
-              class="phone-mockup-large floating-animation"
+              class="phone-mockup-large floating-animation relative"
               style="animation-delay: -2s"
             >
+              <div
+                class="absolute -bottom-3 -left-3 w-8 h-8 bg-wellness-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10"
+              >
+                3
+              </div>
               <div class="phone-screen-large">
                 <img
                   src="images/app-screens/unlocked-apps.png"
@@ -126,9 +163,14 @@
 
             <!-- Screen 4 - Stats/Progress -->
             <div
-              class="phone-mockup-large floating-animation"
+              class="phone-mockup-large floating-animation relative"
               style="animation-delay: -3s"
             >
+              <div
+                class="absolute -bottom-3 -right-3 w-8 h-8 bg-wellness-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10"
+              >
+                4
+              </div>
               <div class="phone-screen-large">
                 <img
                   src="images/app-screens/stats-screen.png"
@@ -136,37 +178,6 @@
                   class="w-full h-full object-cover rounded-lg"
                 />
               </div>
-            </div>
-          </div>
-
-          <!-- Flow Indicators -->
-          <div class="absolute inset-0 pointer-events-none">
-            <!-- Number 1 -->
-            <div
-              class="absolute top-2 left-2 w-6 h-6 bg-wellness-500 text-white rounded-full flex items-center justify-center text-sm font-bold"
-            >
-              1
-            </div>
-
-            <!-- Number 2 -->
-            <div
-              class="absolute top-2 right-2 w-6 h-6 bg-wellness-500 text-white rounded-full flex items-center justify-center text-sm font-bold"
-            >
-              2
-            </div>
-
-            <!-- Number 3 -->
-            <div
-              class="absolute bottom-2 left-2 w-6 h-6 bg-wellness-500 text-white rounded-full flex items-center justify-center text-sm font-bold"
-            >
-              3
-            </div>
-
-            <!-- Number 4 -->
-            <div
-              class="absolute bottom-2 right-2 w-6 h-6 bg-wellness-500 text-white rounded-full flex items-center justify-center text-sm font-bold"
-            >
-              4
             </div>
           </div>
         </div>
