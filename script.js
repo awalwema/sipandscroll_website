@@ -44,41 +44,51 @@ document.querySelectorAll(".feature-card").forEach((card) => {
 
 // Button click handlers
 document.addEventListener("DOMContentLoaded", function () {
-  // Primary CTA button
-  const primaryButton = document.querySelector(
-    'button:contains("Start Sipping & Scrolling")'
-  );
-  if (primaryButton) {
-    primaryButton.addEventListener("click", function () {
-      // Add your app download logic here
-      console.log("Primary CTA clicked - redirect to app store");
+  // Find the "Get Notified When Available" button
+  const buttons = document.querySelectorAll("button");
+  let getNotifiedBtn = null;
+
+  buttons.forEach((button) => {
+    if (button.textContent.includes("Get Notified When Available")) {
+      getNotifiedBtn = button;
+    }
+  });
+
+  // Modal elements
+  const modal = document.getElementById("email-modal");
+  const form = document.getElementById("email-form");
+  const cancelBtn = document.getElementById("cancel-btn");
+
+  // Open modal
+  if (getNotifiedBtn) {
+    getNotifiedBtn.addEventListener("click", function () {
+      modal.classList.remove("hidden");
     });
   }
 
-  // Secondary CTA button
-  const secondaryButton = document.querySelector(
-    'button:contains("See How It Works")'
-  );
-  if (secondaryButton) {
-    secondaryButton.addEventListener("click", function () {
-      // Scroll to how it works section
-      const howItWorksSection = document.querySelector(
-        "section:nth-of-type(2)"
-      );
-      if (howItWorksSection) {
-        howItWorksSection.scrollIntoView({ behavior: "smooth" });
-      }
-    });
-  }
+  // Close modal
+  cancelBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+  });
 
-  // Download button in nav
-  const navDownloadButton = document.querySelector("nav button");
-  if (navDownloadButton) {
-    navDownloadButton.addEventListener("click", function () {
-      // Add your app download logic here
-      console.log("Nav download button clicked - redirect to app store");
-    });
-  }
+  // Close modal on backdrop click
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+    }
+  });
+
+  // Handle form submission (opens Google Form)
+  form.addEventListener("submit", function () {
+    // Close modal immediately
+    modal.classList.add("hidden");
+
+    // Update button text
+    if (getNotifiedBtn) {
+      getNotifiedBtn.textContent = "✓ You're on the list!";
+      getNotifiedBtn.disabled = true;
+    }
+  });
 });
 
 // Add mobile menu functionality if needed
@@ -129,14 +139,68 @@ function scrollToHowItWorks() {
 // Add this to your existing script.js
 function initPhotoRotation() {
   const pairs = document.querySelectorAll(".photo-pair");
-  let currentIndex = 0;
 
-  setInterval(() => {
-    pairs[currentIndex].classList.remove("active");
-    currentIndex = (currentIndex + 1) % pairs.length;
-    pairs[currentIndex].classList.add("active");
-  }, 4000);
+  if (pairs.length > 0) {
+    // Add this check
+    let currentIndex = 0;
+
+    setInterval(() => {
+      pairs[currentIndex].classList.remove("active");
+      currentIndex = (currentIndex + 1) % pairs.length;
+      pairs[currentIndex].classList.add("active");
+    }, 4000);
+  }
 }
 
 // Initialize when page loads
 document.addEventListener("DOMContentLoaded", initPhotoRotation);
+
+// Add this helper function:
+function submitEmailViaJSONP(email) {
+  return new Promise((resolve, reject) => {
+    const callbackName = "jsonp_callback_" + Math.round(100000 * Math.random());
+
+    // Create callback function
+    window[callbackName] = function (data) {
+      console.log("JSONP response:", data); // Debug log
+      delete window[callbackName];
+      if (script && script.parentNode) {
+        document.body.removeChild(script);
+      }
+      resolve(data);
+    };
+
+    // Create script tag
+    const script = document.createElement("script");
+    script.src = `https://script.google.com/macros/s/AKfycbwsoHTHkD-N6_ww2Lf5Zb76Va0VqiQY5h5suR_wZcf0VW8HHTbRV3ka-vEJdnN-37qwtw/exec?email=${encodeURIComponent(
+      email
+    )}&source=website&callback=${callbackName}`;
+
+    script.onload = function () {
+      console.log("Script loaded successfully"); // Debug log
+    };
+
+    script.onerror = function () {
+      console.log("Script load failed"); // Debug log
+      delete window[callbackName];
+      if (script && script.parentNode) {
+        document.body.removeChild(script);
+      }
+      reject(new Error("Script load failed"));
+    };
+
+    // Add timeout
+    setTimeout(() => {
+      if (window[callbackName]) {
+        console.log("Request timed out"); // Debug log
+        delete window[callbackName];
+        if (script && script.parentNode) {
+          document.body.removeChild(script);
+        }
+        reject(new Error("Request timed out"));
+      }
+    }, 10000); // 10 second timeout
+
+    document.body.appendChild(script);
+  });
+}

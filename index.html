@@ -54,24 +54,26 @@
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
       <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <!-- Left Column - Content -->
-        <div class="text-center lg:text-left">
-          <h1
-            class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight"
-          >
-            Turn phone addiction into
-            <span class="gradient-text"> hydration habit </span>
-          </h1>
+        <div class="text-center lg:text-left flex flex-col">
+          <div class="order-1">
+            <h1
+              class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 leading-tight"
+            >
+              Turn phone addiction into
+              <span class="gradient-text">hydration habit</span>
+            </h1>
 
-          <p
-            class="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl"
-          >
-            Sip & Scroll blocks your favorite apps until you take a selfie
-            drinking water - turning every scroll session into a hydration win
-          </p>
+            <p
+              class="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl"
+            >
+              Sip & Scroll blocks your favorite apps until you take a selfie
+              drinking water - turning every scroll session into a hydration win
+            </p>
+          </div>
 
-          <!-- Social Proof - Mobile Optimized -->
+          <!-- Social Proof -->
           <div
-            class="flex flex-col items-center lg:items-start lg:flex-row gap-3 lg:gap-4 mb-8"
+            class="flex flex-col items-center lg:items-start lg:flex-row gap-3 lg:gap-4 mb-8 order-3 lg:order-2"
           >
             <!-- Photos - Stack vertically on mobile, horizontal on desktop -->
             <div class="flex -space-x-3 lg:-space-x-4">
@@ -104,8 +106,9 @@
             </div>
           </div>
 
+          <!-- CTA -->
           <div
-            class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start order-4 lg:order-3"
           >
             <button
               class="bg-gradient-to-r from-wellness-500 to-hydration-500 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300"
@@ -116,9 +119,9 @@
         </div>
 
         <!-- Right Column - Phone Mockups -->
-        <div class="relative">
+        <div class="relative order-2">
           <div class="grid grid-cols-2 gap-4 lg:gap-6">
-            <!-- Screen 1 - Blocked App -->
+            <!-- All your existing phone mockups stay exactly the same -->
             <div class="phone-mockup-large floating-animation relative">
               <div
                 class="absolute -top-3 -left-3 w-8 h-8 bg-wellness-500 text-white rounded-full flex items-center justify-center text-sm font-bold z-10"
@@ -133,7 +136,6 @@
                 />
               </div>
             </div>
-
             <!-- Screen 2 - Selfie Screen -->
             <div
               class="phone-mockup-large floating-animation relative"
@@ -192,29 +194,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- See How It Works Section -->
-    <section class="bg-white/60 backdrop-blur-sm py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <button
-          onclick="scrollToHowItWorks()"
-          class="border-2 border-wellness-500 text-wellness-700 px-8 py-4 rounded-full font-medium text-lg hover:bg-wellness-50 transition-all duration-300 mb-12"
-        >
-          See How It Works
-        </button>
-
-        <div class="mb-12">
-          <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            How It Works
-          </h2>
-          <p class="text-xl text-gray-600">
-            Simple steps to healthier phone habits
-          </p>
-        </div>
-
-        <!-- Rest of How It Works content stays the same -->
       </div>
     </section>
 
@@ -280,34 +259,62 @@
     <script src="footer.js"></script>
 
     <!-- Add this section before the footer -->
-    <section
-      id="notify-signup"
-      class="bg-gradient-to-r from-wellness-500 to-hydration-500 py-16 hidden"
+    <script src="script.js"></script>
+
+    <!-- Email Modal -->
+    <div
+      id="email-modal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
     >
-      <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-white mb-4">
+      <div class="bg-white rounded-2xl p-8 mx-4 max-w-md w-full">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">
           Get Notified at Launch
-        </h2>
-        <p class="text-xl text-white/90 mb-8">
+        </h3>
+        <p class="text-gray-600 mb-6">
           Be the first to transform your phone habits
         </p>
 
-        <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+        <form
+          id="email-form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSf2ipA4znoQSXUamz82dLliHG_XZtvECYhjbB1S4DYQ5g-eeg/formResponse?usp=header"
+          method="POST"
+          target="_blank"
+        >
           <input
             type="email"
+            name="entry.197439147"
             placeholder="Enter your email"
-            class="flex-1 px-4 py-3 rounded-full border-0 focus:ring-2 focus:ring-white"
+            class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-wellness-500 focus:border-transparent mb-4"
+            required
           />
-          <button
-            type="submit"
-            class="bg-white text-wellness-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-all"
-          >
-            Notify Me
-          </button>
+          <div class="flex gap-3">
+            <button
+              type="button"
+              id="cancel-btn"
+              class="flex-1 px-6 py-3 border border-gray-300 rounded-xl text-gray-700 hover:bg-gray-50 transition-colors"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="flex-1 px-6 py-3 bg-gradient-to-r from-wellness-500 to-hydration-500 text-white rounded-xl hover:shadow-lg transition-all"
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
-    </section>
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Success notification -->
+    <div
+      id="success-notification"
+      class="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-xl shadow-lg transform translate-x-full transition-transform z-50"
+    >
+      <div class="flex items-center gap-2">
+        <span>✓</span>
+        <span>You're on the list!</span>
+      </div>
+    </div>
   </body>
 </html>
