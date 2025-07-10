@@ -300,3 +300,24 @@ html {
   background-clip: text;
   color: transparent;
 }
+
+/* Photo pair rotation */
+.photo-pair {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.photo-pair.active {
+  opacity: 1;
+}
+
+.photo-pair img {
+  transition: transform 0.3s ease;
+}
+
+.photo-pair:hover img {
+  transform: scale(1.05);
+}

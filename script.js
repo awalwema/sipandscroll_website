@@ -125,3 +125,18 @@ function scrollToHowItWorks() {
     howItWorksSection.scrollIntoView({ behavior: "smooth" });
   }
 }
+
+// Add this to your existing script.js
+function initPhotoRotation() {
+  const pairs = document.querySelectorAll(".photo-pair");
+  let currentIndex = 0;
+
+  setInterval(() => {
+    pairs[currentIndex].classList.remove("active");
+    currentIndex = (currentIndex + 1) % pairs.length;
+    pairs[currentIndex].classList.add("active");
+  }, 4000);
+}
+
+// Initialize when page loads
+document.addEventListener("DOMContentLoaded", initPhotoRotation);
