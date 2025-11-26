@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sipandscroll.app/sitemap.xml
