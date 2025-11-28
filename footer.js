@@ -5,9 +5,11 @@ function createFooter() {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="flex items-center space-x-2 mb-4 md:mb-0">
-            <div class="w-8 h-8 bg-gradient-to-r from-wellness-500 to-hydration-500 rounded-full flex items-center justify-center">
-              <span class="text-white font-bold text-sm">S&S</span>
-            </div>
+            <img 
+              src="images/AppIcon.appiconset/40.png" 
+              alt="Sip & Scroll" 
+              class="w-8 h-8 rounded-lg"
+            />
             <span class="text-xl font-bold">Sip & Scroll</span>
           </div>
           <div class="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
