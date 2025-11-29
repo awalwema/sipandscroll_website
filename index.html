@@ -79,11 +79,17 @@
             />
             <span class="text-xl font-bold text-gray-900">Sip & Scroll</span>
           </div>
-          <button
-            class="bg-gradient-to-r from-wellness-500 to-hydration-500 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all duration-300 cursor-not-allowed opacity-80"
+          <a
+            href="https://apps.apple.com/us/app/sip-scroll-app-blocker/id6748373872"
+            class="bg-black text-white px-6 py-2 rounded-full font-medium hover:shadow-lg hover:bg-gray-900 transition-all duration-300 flex items-center gap-2"
           >
-            Coming Soon
-          </button>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.74 1.18 0 2.21-.93 3.57-.84 1.56.12 2.8.84 3.5 1.93-2.71 1.66-2.16 5.38.68 6.66-.55 1.88-1.51 3.6-2.83 4.48zM12.01 4.5c-.09-2.28 1.91-4.5 4.1-4.5.32 2.67-2.54 4.68-4.1 4.5z"
+              />
+            </svg>
+            Download
+          </a>
         </div>
       </div>
     </nav>
@@ -149,11 +155,17 @@
           <div
             class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start order-4 lg:order-3"
           >
-            <button
-              class="bg-gradient-to-r from-wellness-500 to-hydration-500 text-white px-8 py-4 rounded-full font-medium text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+            <a
+              href="https://apps.apple.com/us/app/sip-scroll-app-blocker/id6748373872"
+              target="_blank"
+              class="transform hover:scale-105 transition-all duration-300 inline-block"
             >
-              Get Notified When Available
-            </button>
+              <img
+                src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&releaseDate=1732579200"
+                alt="Download on the App Store"
+                class="h-16 w-auto"
+              />
+            </a>
           </div>
         </div>
 
@@ -288,7 +300,12 @@
 
         <div class="text-center mt-8">
           <p class="text-gray-600 mb-4">Starting at $3/week or $50/year</p>
-          <p class="text-sm text-gray-500">Available at launch</p>
+          <a
+            href="https://apps.apple.com/us/app/sip-scroll-app-blocker/id6748373872"
+            class="text-wellness-600 hover:text-wellness-700 font-medium underline"
+          >
+            Download now →
+          </a>
         </div>
       </div>
     </section>
@@ -299,61 +316,5 @@
 
     <!-- Add this section before the footer -->
     <script src="script.js"></script>
-
-    <!-- Email Modal -->
-    <div
-      id="email-modal"
-      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden"
-    >
-      <div class="bg-white rounded-2xl p-8 mx-4 max-w-md w-full">
-        <h3 class="text-2xl font-bold text-gray-900 mb-4">
-          Get Notified at Launch
-        </h3>
-        <p class="text-gray-600 mb-6">
-          Be the first to transform your phone habits
-        </p>
-
-        <form
-          id="email-form"
-          action="https://docs.google.com/forms/d/e/1FAIpQLSf2ipA4znoQSXUamz82dLliHG_XZtvECYhjbB1S4DYQ5g-eeg/formResponse?usp=header"
-          method="POST"
-          target="_blank"
-        >
-          <input
-            type="email"
-            name="entry.197439147"
-            placeholder="Enter your email"
-            class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-wellness-500 focus:border-transparent mb-4"
-            required
-          />
-          <div class="flex gap-3">
-            <button
-              type="button"
-              id="cancel-btn"
-              class="flex-1 px-6 py-3 border border-gray-300 rounded-xl text-gray-700 hover:bg-gray-50 transition-colors"
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              class="flex-1 px-6 py-3 bg-gradient-to-r from-wellness-500 to-hydration-500 text-white rounded-xl hover:shadow-lg transition-all"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <!-- Success notification -->
-    <div
-      id="success-notification"
-      class="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-xl shadow-lg transform translate-x-full transition-transform z-50"
-    >
-      <div class="flex items-center gap-2">
-        <span>✓</span>
-        <span>You're on the list!</span>
-      </div>
-    </div>
   </body>
 </html>
