@@ -13,6 +13,7 @@ function createFooter() {
             <span class="text-xl font-bold">Sip & Scroll</span>
           </div>
           <div class="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
+            <a href="blog/what-is-doomscrolling.html" class="hover:text-wellness-400 transition-colors">Blog</a>
             <a href="privacy.html" class="hover:text-wellness-400 transition-colors">Privacy Policy</a>
             <a href="terms.html" class="hover:text-wellness-400 transition-colors">Terms of Service</a>
             <a href="support.html" class="hover:text-wellness-400 transition-colors">Support</a>
