@@ -1,0 +1,16 @@
+# Claude Code config — internal tooling, not for public repo
+.claude/
+
+# Editorial strategy & content engine — keep off public repo
+content/
+"SEO Content Engine Specification.md"
+SEO Content Engine Specification.md
+
+# Internal planning docs
+tasks/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
