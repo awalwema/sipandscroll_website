@@ -1,0 +1,21 @@
+# Sip & Scroll
+
+> Sip & Scroll is a doomscroll blocker and hydration app for iOS. It adds a gentle friction layer before opening addictive apps — take a sip of water, snap a selfie, then enjoy up to 30 minutes of intentional scrolling.
+
+## App
+
+- [Download on the App Store](https://apps.apple.com/us/app/sip-scroll-app-blocker/id6748373872): Free to download. Premium: $2.99/week with 3-day trial or $24.99 lifetime.
+
+## Blog
+
+- [What is Doomscrolling?](https://sipandscroll.app/blog/what-is-doomscrolling.html): Understanding doomscrolling — why it happens and how to break the cycle with intentional habits.
+- [7 Best App Blockers for iPhone in 2026](https://sipandscroll.app/blog/best-app-blockers-iphone.html): Tested and ranked — the top iPhone app blockers from nuclear lockouts to gentle nudges.
+- [Digital Minimalism: A Practical Guide](https://sipandscroll.app/blog/digital-minimalism-guide.html): A practical digital minimalism framework for people who live online, including the 30-day declutter.
+
+## Key Features
+
+- Hydration-gated app access: take a sip of water before opening blocked apps
+- Selfie verification prevents cheating without feeling punitive
+- 30-minute timed sessions create natural stopping points
+- Works with any app: TikTok, Instagram, YouTube Shorts, etc.
+- Not a hard blocker — gentle friction, not a wall
