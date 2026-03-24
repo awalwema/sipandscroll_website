@@ -415,6 +415,37 @@ html {
   color: #6b7280;
 }
 
+.prose-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin: 2rem 0;
+  display: block;
+}
+
+.prose-content figure {
+  margin: 2rem 0;
+}
+
+.prose-content figcaption {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.prose-content .hero-image {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Responsive table wrapper for mobile */
+.prose-content .overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+}
+
 .cta-box {
   box-shadow: 0 25px 50px -12px rgba(34, 197, 94, 0.25);
 }
