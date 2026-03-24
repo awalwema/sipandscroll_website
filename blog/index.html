@@ -13,6 +13,18 @@
       }
       gtag("js", new Date());
       gtag("config", "G-8DHCYGTRN2");
+
+      document.addEventListener("click", function (e) {
+        var link = e.target.closest('a[href*="apps.apple.com"]');
+        if (link) {
+          gtag("event", "cta_click", {
+            event_category: "conversion",
+            event_label: link.textContent.trim(),
+            link_url: link.href,
+            page_location: window.location.pathname,
+          });
+        }
+      });
     </script>
 
     <meta charset="UTF-8" />
