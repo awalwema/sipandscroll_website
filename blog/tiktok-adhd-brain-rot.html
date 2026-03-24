@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8DHCYGTRN2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-8DHCYGTRN2");
+
+      document.addEventListener("click", function (e) {
+        var link = e.target.closest('a[href*="apps.apple.com"]');
+        if (link) {
+          gtag("event", "cta_click", {
+            event_category: "conversion",
+            event_label: link.textContent.trim(),
+            link_url: link.href,
+            page_location: window.location.pathname,
+          });
+        }
+      });
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok ADHD Brain Rot: Real or Hype? - Sip & Scroll Blog</title>
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/AppIcon.appiconset/40.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/AppIcon.appiconset/20.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/AppIcon.appiconset/180.png"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css" />
+
+    <meta
+      name="description"
+      content="Is TikTok actually giving you ADHD, or is it brain rot? The neuroscience behind short-form video, attention damage, and what you can do about it."
+    />
+    <meta
+      name="keywords"
+      content="tiktok adhd, tiktok brain rot, brain rot meaning, tiktok attention span, short form video addiction, tiktok addiction, screen time adhd"
+    />
+    <meta property="og:title" content="Is TikTok Giving You ADHD, or Is It Just Brain Rot?" />
+    <meta
+      property="og:description"
+      content="Your attention span isn't broken—it's being trained. The neuroscience behind TikTok brain rot and what to do about it."
+    />
+    <meta
+      property="og:image"
+      content="https://sipandscroll.app/images/blog/tiktok-adhd-brain-rot-hero.webp"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta
+      property="og:url"
+      content="https://sipandscroll.app/blog/tiktok-adhd-brain-rot.html"
+    />
+    <meta property="og:type" content="article" />
+    <link
+      rel="canonical"
+      href="https://sipandscroll.app/blog/tiktok-adhd-brain-rot.html"
+    />
+
+    <!-- Article structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Is TikTok Giving You ADHD, or Is It Just Brain Rot?",
+        "description": "The neuroscience behind TikTok brain rot, pseudo-ADHD symptoms from short-form video, and how to reclaim your attention span.",
+        "author": {
+          "@type": "Organization",
+          "name": "Sip & Scroll"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Sip & Scroll",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://sipandscroll.app/images/AppIcon.appiconset/1024.png"
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://sipandscroll.app/images/blog/tiktok-adhd-brain-rot-hero.webp",
+          "width": 1200,
+          "height": 675
+        },
+        "datePublished": "2026-03-24",
+        "dateModified": "2026-03-24"
+      }
+    </script>
+
+    <!-- FAQ structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can TikTok give you ADHD?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TikTok cannot cause clinical ADHD, which is a neurodevelopmental condition present from childhood. However, heavy TikTok use can produce ADHD-like symptoms—shortened attention span, difficulty focusing on longer tasks, and increased impulsivity—by training your brain to expect constant rapid-fire stimulation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is TikTok brain rot?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TikTok brain rot describes the cognitive fog, shortened attention span, and reduced ability to focus that comes from excessive short-form video consumption. It's not a medical diagnosis but a colloquial term for the real neurological effects of training your dopamine system on 15-60 second content loops."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does TikTok affect your attention span?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TikTok's algorithm serves content in 15-60 second bursts with constant novelty, training your brain's dopamine system to expect new stimulation every few seconds. Over time, this makes longer-form tasks like reading, studying, or deep conversation feel unbearably slow and boring by comparison."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I fix TikTok brain rot?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start by introducing friction before you open TikTok—a brief pause that breaks the automatic habit loop. Gradually increase your tolerance for longer-form content by reading articles or watching longer videos. Apps like Sip & Scroll add a gentle friction layer that makes you take a sip of water before scrolling, creating a natural pause point."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is brain rot from TikTok permanent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The attention damage from excessive short-form video is reversible. Your brain is neuroplastic—it adapted to rapid stimulation, and it can re-adapt to sustained focus. Most people report significant improvement within 2-4 weeks of reducing short-form video consumption and practicing longer-form attention exercises."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-gradient-to-br from-wellness-50 to-hydration-50 min-h-screen">
+    <!-- Navigation -->
+    <nav
+      class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-wellness-200"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <a href="../index.html" class="flex items-center space-x-2">
+            <img
+              src="../images/AppIcon.appiconset/40.png"
+              alt="Sip & Scroll"
+              class="w-8 h-8 rounded-lg"
+            />
+            <span class="text-xl font-bold text-gray-900">Sip & Scroll</span>
+          </a>
+          <div class="flex items-center gap-6">
+            <a
+              href="../blog/index.html"
+              class="text-gray-600 font-medium hover:text-wellness-600 transition-colors"
+            >
+              Blog
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/sip-scroll-app-blocker/id6748373872"
+              class="bg-black text-white px-6 py-2 rounded-full font-medium hover:shadow-lg hover:bg-gray-900 transition-all duration-300 flex items-center gap-2"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.74 1.18 0 2.21-.93 3.57-.84 1.56.12 2.8.84 3.5 1.93-2.71 1.66-2.16 5.38.68 6.66-.55 1.88-1.51 3.6-2.83 4.48zM12.01 4.5c-.09-2.28 1.91-4.5 4.1-4.5.32 2.67-2.54 4.68-4.1 4.5z"
+                />
+              </svg>
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Article -->
+    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Article Header -->
+      <header class="mb-12">
+        <div class="flex items-center gap-3 mb-6">
+          <span
+            class="bg-wellness-100 text-wellness-700 text-sm font-medium px-3 py-1 rounded-full"
+          >
+            Mental Health
+          </span>
+          <span class="text-gray-400 text-sm">8 min read</span>
+        </div>
+        <h1
+          class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+        >
+          Is TikTok Giving You ADHD, or Is It Just Brain Rot?
+        </h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          Your attention span isn't broken. It's being trained—by an algorithm
+          that profits from your inability to look away.
+        </p>
+      </header>
+
+      <figure>
+        <img
+          src="../images/blog/tiktok-adhd-brain-rot-hero.webp"
+          alt="Person staring at rapid-fire TikTok content with fragmented attention visualized around them"
+          class="hero-image"
+          width="1200"
+          height="675"
+          fetchpriority="high"
+        />
+      </figure>
+
+      <!-- Article Content -->
+      <div class="prose-content">
+        <p>
+          You told yourself you'd watch one video. Just one. Something about a
+          cat failing at parkour, maybe a cooking hack you'll never actually try.
+          That was forty-five minutes ago. Your neck hurts. Your thumb is still
+          swiping. And the thing you sat down to do—the assignment, the email,
+          the workout—feels impossibly far away now, like it belongs to a
+          different person in a different timeline.
+        </p>
+
+        <p>
+          You lock your phone. You open your laptop. You stare at a blank
+          document and realize you can't hold a single thought for more than
+          eight seconds. Something is wrong with you, right?
+        </p>
+
+        <p>
+          Not exactly. TikTok brain rot is the colloquial term for the cognitive
+          fog, shortened attention span, and reduced ability to focus that comes
+          from excessive short-form video consumption. It's not a clinical
+          diagnosis, but the neurological effects are real: heavy TikTok use can
+          produce symptoms that look almost identical to ADHD—restlessness,
+          inability to sustain attention, compulsive task-switching—without the
+          underlying neurodevelopmental condition. The distinction matters,
+          because one requires professional treatment and the other requires
+          architectural change.
+        </p>
+
+        <h2>What "Brain Rot" Actually Means</h2>
+
+        <figure>
+          <img
+            src="../images/blog/tiktok-adhd-brain-rot-dopamine.webp"
+            alt="Neural pathways in a brain showing rapid dopamine bursts and fading sustained attention"
+            width="1200"
+            height="800"
+            loading="lazy"
+          />
+        </figure>
+
+        <p>
+          The term sounds like internet hyperbole. It isn't.
+        </p>
+
+        <p>
+          When you watch TikTok, your brain receives a new stimulus every 15 to
+          60 seconds. Each swipe delivers a micro-dose of novelty—a fresh face,
+          a new joke, a different emotional register. Your dopamine system
+          doesn't just respond to pleasure; it responds to <em>prediction
+          error</em>, the gap between what you expected and what you got. TikTok
+          is essentially a prediction-error machine, delivering an endless stream
+          of surprises calibrated by an algorithm that knows exactly what will
+          keep your thumb moving.
+        </p>
+
+        <p>
+          Over weeks and months, this trains your reward circuitry to expect
+          constant rapid stimulation. Reading a book becomes excruciating.
+          Sitting through a ten-minute YouTube video feels like punishment. A
+          conversation without a punchline every fifteen seconds starts to feel
+          like it's buffering. Your baseline tolerance for boredom collapses.
+          That's brain rot. Not damage in the traumatic sense, but a
+          recalibration of what your nervous system considers "normal."
+        </p>
+
+        <p>
+          This is the same pattern behind <a href="what-is-doomscrolling.html">doomscrolling</a>—the endless consumption of
+          low-value content driven by algorithms that exploit your dopamine
+          loops. TikTok just does it faster.
+        </p>
+
+        <h2>The TikTok-ADHD Connection</h2>
+
+        <p>
+          Here's where it gets confusing. ADHD—attention deficit hyperactivity
+          disorder—is a neurodevelopmental condition present from childhood. It
+          involves structural differences in dopamine regulation, executive
+          function, and working memory. You can't "get" ADHD from an app.
+        </p>
+
+        <p>
+          But you can develop symptoms that mimic it so convincingly that the
+          line blurs.
+        </p>
+
+        <p>
+          A <a href="https://publications.aap.org/pediatricsopenscience/article/2/1/1/205729/Digital-Media-Genetics-and-Risk-for-ADHD-Symptoms" target="_blank" rel="noopener">longitudinal study from the ABCD cohort</a>, tracking over 8,000 children, found that social media use was associated with increased inattention symptoms over time—and critically, children with existing attention problems didn't start using more social media, suggesting the relationship runs from screen to symptom, not the other way around.
+        </p>
+
+        <p>
+          The mechanism is straightforward. ADHD brains struggle with dopamine
+          regulation by default. TikTok-trained brains struggle with it by
+          habit. The subjective experience—sitting at your desk, unable to start
+          the thing you need to do, reaching for your phone instead—feels
+          identical.
+        </p>
+
+        <h2>Is It ADHD or Just Your Feed?</h2>
+
+        <p>
+          If you've always had trouble focusing—in school, at work, in
+          conversations, long before TikTok existed—it's worth talking to a
+          professional about ADHD. Genuine ADHD doesn't emerge in your twenties
+          because you downloaded an app.
+        </p>
+
+        <p>
+          But if your attention problems coincide suspiciously with your screen
+          time going from one hour to four, and you can still hyperfocus on
+          things you find genuinely interesting, you're probably looking at
+          acquired attention fragmentation. Your brain isn't broken. It's been
+          trained.
+        </p>
+
+        <p>The good news? Training is reversible.</p>
+
+        <h2>Breaking the Cycle</h2>
+
+        <figure>
+          <img
+            src="../images/blog/tiktok-adhd-brain-rot-breaking-cycle.webp"
+            alt="Hands placing a smartphone face-down on a desk next to a book and glass of water"
+            width="1200"
+            height="800"
+            loading="lazy"
+          />
+        </figure>
+
+        <p>
+          The instinct is to go cold turkey. Delete the app. Lock the phone in a
+          drawer. But if you've tried that, you already know what happens. You
+          reinstall it within 72 hours, usually at 11 PM when you can't sleep.
+          Willpower alone doesn't work against systems designed by thousands of
+          engineers to keep you engaged.
+        </p>
+
+        <p>
+          What works is friction—small, intentional barriers between you and the
+          automatic behavior. Not walls. Speed bumps.
+        </p>
+
+        <p>
+          The same principle underlies <a href="digital-minimalism-guide.html">digital minimalism</a>: you don't
+          have to delete everything. You just need to add enough pause that
+          opening the app becomes a conscious choice rather than a reflex.
+        </p>
+
+        <p>
+          Gradually reintroduce longer-form content. Read an article all the way
+          through. Watch a 20-minute video without checking your phone. Sit with
+          boredom for five minutes without filling it. Each of these small acts
+          is neuroplastic resistance training—you're teaching your dopamine
+          system that stimulation doesn't have to arrive every fifteen seconds.
+        </p>
+
+        <p>
+          One of the most effective <a href="best-app-blockers-iphone.html">app blockers for iPhone</a> takes this
+          friction-based approach. <strong>Sip & Scroll</strong> doesn't lock
+          you out. It doesn't punish you. It simply asks you to take a sip of
+          water and snap a selfie before opening TikTok, Instagram, or whatever
+          app pulls you in. That five-second pause breaks the automatic loop.
+          You get 30 minutes of unblocked access, then another sip to continue.
+          It turns a mindless reflex into a small, hydrating ritual.
+        </p>
+
+        <p>
+          Your attention span wasn't built to withstand an algorithm optimized
+          by billions of data points. That's not a moral failing. But
+          recognizing the pattern—and building the architecture to interrupt
+          it—is something you can do right now. Your brain adapted to rapid
+          stimulation. It can re-adapt to sustained focus. Most people notice a
+          difference within two weeks.
+        </p>
+
+        <p>
+          The feed will always be there. The question is whether you open it on
+          autopilot, or on your terms.
+        </p>
+
+        <!-- CTA Box -->
+        <div
+          class="cta-box bg-gradient-to-r from-wellness-500 to-hydration-500 rounded-2xl p-8 my-12 text-white text-center"
+        >
+          <h3 class="text-2xl font-bold mb-4">Take back your attention span</h3>
+          <p class="mb-6 text-white/90">
+            Add a sip of water between you and the algorithm. One small pause,
+            one big shift.
+          </p>
+          <a
+            href="https://apps.apple.com/us/app/sip-scroll-app-blocker/id6748373872"
+            class="inline-flex items-center bg-white text-gray-900 px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all duration-300"
+          >
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.74 1.18 0 2.21-.93 3.57-.84 1.56.12 2.8.84 3.5 1.93-2.71 1.66-2.16 5.38.68 6.66-.55 1.88-1.51 3.6-2.83 4.48zM12.01 4.5c-.09-2.28 1.91-4.5 4.1-4.5.32 2.67-2.54 4.68-4.1 4.5z"
+              />
+            </svg>
+            Download Sip & Scroll
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script>
+      document.getElementById("footer-container").innerHTML = `
+        <footer class="bg-gray-900 text-white py-12 mt-16">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <img
+                  src="../images/AppIcon.appiconset/40.png"
+                  alt="Sip & Scroll"
+                  class="w-8 h-8 rounded-lg"
+                />
+                <span class="text-xl font-bold">Sip & Scroll</span>
+              </div>
+              <div class="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
+                <a href="../blog/index.html" class="hover:text-wellness-400 transition-colors">Blog</a>
+                <a href="../privacy.html" class="hover:text-wellness-400 transition-colors">Privacy Policy</a>
+                <a href="../terms.html" class="hover:text-wellness-400 transition-colors">Terms of Service</a>
+                <a href="../support.html" class="hover:text-wellness-400 transition-colors">Support</a>
+              </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+              <p>&copy; 2025 Sip & Scroll. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+      `;
+    </script>
+  </body>
+</html>
