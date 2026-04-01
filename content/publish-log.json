@@ -47,5 +47,12 @@
     "cluster": "addiction-science",
     "cluster_role": "supporting",
     "week_number": 13
+  },
+  {
+    "slug": "instagram-reels-addiction",
+    "published_date": "2026-04-01",
+    "cluster": "social-media",
+    "cluster_role": "supporting",
+    "week_number": 14
   }
 ]
