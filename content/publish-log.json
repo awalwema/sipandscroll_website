@@ -54,5 +54,12 @@
     "cluster": "social-media",
     "cluster_role": "supporting",
     "week_number": 14
+  },
+  {
+    "slug": "sip-and-scroll-vs-opal",
+    "published_date": "2026-04-03",
+    "cluster": "app-reviews",
+    "cluster_role": "supporting",
+    "week_number": 14
   }
 ]

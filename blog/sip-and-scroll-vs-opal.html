@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8DHCYGTRN2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-8DHCYGTRN2");
+
+      document.addEventListener("click", function (e) {
+        var link = e.target.closest('a[href*="apps.apple.com"]');
+        if (link) {
+          gtag("event", "cta_click", {
+            event_category: "conversion",
+            event_label: link.textContent.trim(),
+            link_url: link.href,
+            page_location: window.location.pathname,
+          });
+        }
+      });
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sip & Scroll vs. Opal: Which App Is Right for You? - Sip & Scroll Blog</title>
+
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/AppIcon.appiconset/40.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/AppIcon.appiconset/20.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/AppIcon.appiconset/180.png"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../styles.css" />
+
+    <!-- SEO optimized for "opal app alternative" -->
+    <meta
+      name="description"
+      content="Sip & Scroll vs. Opal: two very different screen time apps for iPhone. One locks you out cold. The other nudges you gently. Which approach actually works for you?"
+    />
+    <meta
+      name="keywords"
+      content="opal app alternative, sip and scroll vs opal, opal app review, screen time app iphone, app blocker iphone, opal focus app alternative"
+    />
+    <meta property="og:title" content="Sip & Scroll vs. Opal: Which Screen Time App Is Right for You? - Sip & Scroll" />
+    <meta
+      property="og:description"
+      content="Opal locks you out. Sip & Scroll nudges you gently. Two philosophies, one goal. Here's how to choose."
+    />
+    <meta
+      property="og:image"
+      content="https://sipandscroll.app/images/blog/sip-and-scroll-vs-opal-hero.webp"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="675" />
+    <meta
+      property="og:url"
+      content="https://sipandscroll.app/blog/sip-and-scroll-vs-opal.html"
+    />
+    <meta property="og:type" content="article" />
+    <link
+      rel="canonical"
+      href="https://sipandscroll.app/blog/sip-and-scroll-vs-opal.html"
+    />
+
+    <!-- Article structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Sip & Scroll vs. Opal: Which Screen Time App Is Right for You?",
+        "description": "A head-to-head comparison of two very different approaches to managing iPhone screen time — Opal's hard lockouts versus Sip & Scroll's gentle friction.",
+        "author": {
+          "@type": "Organization",
+          "name": "Sip & Scroll"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Sip & Scroll",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://sipandscroll.app/images/AppIcon.appiconset/1024.png"
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://sipandscroll.app/images/blog/sip-and-scroll-vs-opal-hero.webp",
+          "width": 1200,
+          "height": 675
+        },
+        "datePublished": "2026-04-03",
+        "dateModified": "2026-04-03"
+      }
+    </script>
+
+    <!-- FAQ structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the best Opal app alternative for iPhone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sip & Scroll is the top Opal alternative for users who want friction-based habit change rather than hard lockouts. Instead of blocking app access entirely, Sip & Scroll requires a sip of water and a quick selfie before granting 45 minutes of access — making scrolling intentional without making it punitive. It's free to download."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Opal or Sip & Scroll better for reducing screen time?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on your personality and goal. Opal is better for people who need hard scheduled lockouts and accountability streaks during deep work. Sip & Scroll is better for people who want to build a healthier relationship with apps rather than going cold turkey — its gentle friction model is less likely to cause the rebound binge that strict blockers often produce."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Opal block apps completely?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Opal's Focus Sessions block chosen apps and websites for a set period. In Deep Work mode, bypassing requires waiting out a cooldown timer. This hard lockout approach works well for scheduled focus blocks but can feel punitive for casual use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is Sip & Scroll different from Opal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sip & Scroll uses friction instead of walls. Rather than locking you out, it requires you to take a sip of water and take a quick selfie before accessing a blocked app. You then get 45 minutes of uninterrupted access. The hydration mechanic turns a mindless habit into a moment of physical self-care. Opal is punitive; Sip & Scroll is ritualistic."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Sip & Scroll free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Sip & Scroll is free to download on the App Store. A premium version is available for users who want additional features."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-gradient-to-br from-wellness-50 to-hydration-50 min-h-screen">
+    <!-- Navigation -->
+    <nav
+      class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-wellness-200"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <a href="../index.html" class="flex items-center space-x-2">
+            <img
+              src="../images/AppIcon.appiconset/40.png"
+              alt="Sip & Scroll"
+              class="w-8 h-8 rounded-lg"
+            />
+            <span class="text-xl font-bold text-gray-900">Sip & Scroll</span>
+          </a>
+          <div class="flex items-center gap-6">
+            <a
+              href="../blog/index.html"
+              class="text-gray-600 font-medium hover:text-wellness-600 transition-colors"
+            >
+              Blog
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/sip-scroll-app-blocker/id6748373872"
+              class="bg-black text-white px-6 py-2 rounded-full font-medium hover:shadow-lg hover:bg-gray-900 transition-all duration-300 flex items-center gap-2"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.74 1.18 0 2.21-.93 3.57-.84 1.56.12 2.8.84 3.5 1.93-2.71 1.66-2.16 5.38.68 6.66-.55 1.88-1.51 3.6-2.83 4.48zM12.01 4.5c-.09-2.28 1.91-4.5 4.1-4.5.32 2.67-2.54 4.68-4.1 4.5z"
+                />
+              </svg>
+              Download
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Article -->
+    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Article Header -->
+      <header class="mb-12">
+        <div class="flex items-center gap-3 mb-6">
+          <span
+            class="bg-wellness-100 text-wellness-700 text-sm font-medium px-3 py-1 rounded-full"
+          >
+            App Comparisons
+          </span>
+          <span class="text-gray-400 text-sm">9 min read</span>
+        </div>
+        <h1
+          class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight"
+        >
+          Sip &amp; Scroll vs. Opal: Which Screen Time App Is Right for You?
+        </h1>
+        <p class="text-xl text-gray-600 leading-relaxed">
+          Two very different philosophies. One goal: less mindless scrolling. Here's how to choose.
+        </p>
+      </header>
+
+      <figure>
+        <img
+          src="../images/blog/sip-and-scroll-vs-opal-hero.webp"
+          alt="Two iPhone screens side by side showing different approaches to screen time management — Opal app alternative comparison"
+          class="hero-image"
+          width="1200"
+          height="675"
+          fetchpriority="high"
+        />
+      </figure>
+
+      <!-- Article Content -->
+      <div class="prose-content">
+
+        <p>
+          You've decided to cut back on your phone. Not delete everything — just be more intentional. So you download an app blocker. You set it up, pick your problem apps, and go to bed feeling like you've finally got a plan.
+        </p>
+
+        <p>
+          The next morning, you reach for Instagram out of habit. The block hits immediately. A message: <em>Focus session active. Access denied.</em> No override. No timer. Just a wall. It's 7:03 AM and you feel punished before you've done anything wrong.
+        </p>
+
+        <p>
+          By noon you've already uninstalled the app. Not because you don't want to change — but because being locked out of your own phone feels like wearing a straitjacket, not building a habit.
+        </p>
+
+        <p>
+          This is the fundamental tension in screen time management software. <strong>Opal</strong> and <strong>Sip & Scroll</strong> represent the two dominant schools of thought: the hard wall, and the gentle nudge. Both work. Both fail. The question is which one fails less for you specifically — and that depends entirely on your psychology, your goals, and what kind of relationship you want to have with your phone going forward.
+        </p>
+
+        <h2>What Opal Does — and Does Well</h2>
+
+        <figure>
+          <img
+            src="../images/blog/sip-and-scroll-vs-opal-opal.webp"
+            alt="Phone displaying a focus session with a hard lock screen blocking distracting apps during deep work"
+            width="1200"
+            height="800"
+            loading="lazy"
+          />
+        </figure>
+
+        <p>
+          Opal is a polished, productivity-first app blocker. You create Focus Sessions — scheduled or on-demand blocks that lock you out of chosen apps and websites for a defined window. The interface is clean. The scheduling system is flexible. The "Deep Work" mode makes it feel like a serious professional tool rather than a parental control.
+        </p>
+
+        <p>
+          What makes Opal genuinely compelling is its social accountability layer. You can share focus streaks with friends, which introduces a real — if light — commitment device. When sessions are active, bypassing them in Deep Work mode requires waiting out a cooldown timer. That 10-second pause is often enough friction to make you put the phone down. For the right person, it works extraordinarily well.
+        </p>
+
+        <p>
+          Opal also provides detailed usage analytics: time spent per app, blocked time saved, weekly trends. If you're someone who likes data dashboards and optimized schedules, that feedback loop is motivating. You can see your deep work hours accumulating like a savings account.
+        </p>
+
+        <p>
+          <strong>Best for:</strong> Professionals protecting scheduled focus blocks, students during exam season, anyone who responds well to hard commitments and usage data.
+        </p>
+
+        <p>
+          <strong>Pricing:</strong> Opal has a limited free tier; full features require a <a href="https://apps.apple.com/us/app/opal-screen-time-control/id1497465230" target="_blank" rel="noopener">subscription available on the App Store</a> at roughly $8/month (approximately $99–$120/year billed annually).
+        </p>
+
+        <p>
+          <strong>Where it struggles:</strong> Opal's strength is also its weakness. Hard lockouts produce a rebound effect in many users — the moment the block lifts, the urge to catch up on everything you missed hits harder than usual. Strict blocking doesn't address the underlying impulse; it just delays it. And for users who scroll as a decompression ritual rather than a pure addiction, being locked out can feel adversarial rather than supportive.
+        </p>
+
+        <h2>What Sip &amp; Scroll Does Differently</h2>
+
+        <figure>
+          <img
+            src="../images/blog/sip-and-scroll-vs-opal-sip.webp"
+            alt="Person drinking a glass of water next to a smartphone — the Sip & Scroll friction ritual before opening social media"
+            width="1200"
+            height="800"
+            loading="lazy"
+          />
+        </figure>
+
+        <p>
+          Sip & Scroll takes the opposite position: it doesn't block you. It asks a question.
+        </p>
+
+        <p>
+          When you open a managed app — TikTok, Instagram, YouTube Shorts, whatever's pulling at you — you get a pause. Not an error. Not a wall. A prompt: take a sip of water, snap a quick selfie proving it, and you're in. Then you get up to 45 minutes of uninterrupted access before the cycle resets. Another sip to continue, or stop. Your choice.
+        </p>
+
+        <p>
+          This is what behavioral scientists call <em>friction-based intervention</em> — the same mechanism that makes one-click buying so dangerous in reverse. You're not fighting the algorithm with willpower; you're inserting a small physical act between the impulse and the reward. That three-second pause is enough to make the decision conscious instead of automatic. And unlike a hard block, it doesn't feel punitive — it feels like self-care.
+        </p>
+
+        <p>
+          The hydration mechanic is the genuinely novel piece. You're not just building boundaries around your screen time; you're replacing a mindless habit with a healthy one. Every session starts with a sip of water, a physical reset. Over time, that ritual becomes the new association: <em>opening Instagram means drinking water first</em>. That's habit replacement at the architectural level — far more durable than willpower.
+        </p>
+
+        <p>
+          The 45-minute session model also creates natural stopping points without artificial walls. You chose to open the app. You get a real session. When 45 minutes ends, the friction returns — and that moment of friction is where the decision gets made. Do you actually want more, or did you get what you needed?
+        </p>
+
+        <p>
+          <strong>Best for:</strong> Anyone who wants to be more intentional without being punished, people who use scrolling as decompression and want to keep that relationship healthy, iOS users who've tried hard blockers and bounced off them.
+        </p>
+
+        <p>
+          <strong>Pricing:</strong> Free to download on the App Store. Premium features available.
+        </p>
+
+        <h2>The Core Philosophical Difference</h2>
+
+        <p>
+          Strip both apps down to their design philosophy, and you get two fundamentally different diagnoses of the problem.
+        </p>
+
+        <p>
+          Opal's diagnosis: <em>you can't trust yourself, so the app will enforce boundaries for you</em>. It treats app overuse as a discipline failure requiring external control. That's not an insult — it's a model that works for a specific type of person and a specific type of problem. A surgeon who needs to focus for six hours during complex scheduling needs a hard block. An exec doing deep strategy work needs to be unreachable. Opal serves that person exceptionally well.
+        </p>
+
+        <p>
+          Sip & Scroll's diagnosis: <em>you're using apps habitually, not intentionally — and the fix is making each use a choice</em>. The problem isn't that you enjoy Instagram; it's that you open it without deciding to. Friction doesn't remove the option. It inserts a decision point. Research on <a href="what-is-doomscrolling.html">doomscrolling and habit loops</a> consistently shows that the most durable behavior change comes not from restriction but from ritual replacement — giving the brain something to do in the gap between impulse and action.
+        </p>
+
+        <p>
+          Punishment-based approaches also tend to produce what psychologists call <em>reactance</em> — the instinct to rebel against perceived control. Tell yourself you can't have something, and suddenly you want it more. Hard locks can intensify the craving rather than dissolve it, especially for casual scrollers who weren't addicted to begin with. The <a href="digital-minimalism-guide.html">digital minimalism framework</a> addresses this directly: the goal isn't elimination, it's intentionality.
+        </p>
+
+        <h2>Head-to-Head: The Key Differences</h2>
+
+        <div class="overflow-x-auto my-8">
+          <table class="w-full border-collapse border border-gray-200 text-sm">
+            <thead>
+              <tr class="bg-wellness-50">
+                <th class="border border-gray-200 px-4 py-3 text-left font-semibold text-gray-900">Feature</th>
+                <th class="border border-gray-200 px-4 py-3 text-left font-semibold text-gray-900">Opal</th>
+                <th class="border border-gray-200 px-4 py-3 text-left font-semibold text-wellness-700">Sip &amp; Scroll</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-200 px-4 py-3 font-medium">Blocking approach</td>
+                <td class="border border-gray-200 px-4 py-3">Hard lockout (wall)</td>
+                <td class="border border-gray-200 px-4 py-3">Friction (nudge)</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-200 px-4 py-3 font-medium">Override possible?</td>
+                <td class="border border-gray-200 px-4 py-3">No (in Deep Work mode)</td>
+                <td class="border border-gray-200 px-4 py-3">Always — after the ritual</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-200 px-4 py-3 font-medium">Session model</td>
+                <td class="border border-gray-200 px-4 py-3">Scheduled or on-demand blocks</td>
+                <td class="border border-gray-200 px-4 py-3">45-minute access sessions</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-200 px-4 py-3 font-medium">Unique mechanic</td>
+                <td class="border border-gray-200 px-4 py-3">Social accountability streaks</td>
+                <td class="border border-gray-200 px-4 py-3">Hydration ritual + selfie</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-200 px-4 py-3 font-medium">Usage analytics</td>
+                <td class="border border-gray-200 px-4 py-3">Yes (detailed)</td>
+                <td class="border border-gray-200 px-4 py-3">Session tracking</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-200 px-4 py-3 font-medium">Platform</td>
+                <td class="border border-gray-200 px-4 py-3">iOS + Mac</td>
+                <td class="border border-gray-200 px-4 py-3">iOS</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-200 px-4 py-3 font-medium">Pricing</td>
+                <td class="border border-gray-200 px-4 py-3">~$8/month (~$99–120/year)</td>
+                <td class="border border-gray-200 px-4 py-3">Free to download</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-200 px-4 py-3 font-medium">Philosophy</td>
+                <td class="border border-gray-200 px-4 py-3">Enforcement</td>
+                <td class="border border-gray-200 px-4 py-3">Ritual replacement</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Who Should Use Opal</h2>
+
+        <p>
+          Opal is the right choice if you have a specific, scheduled focus problem. You need to be unreachable from 9 AM to 1 PM. You want to protect deep work blocks you've already committed to. You respond well to hard commitments — the same psychology that makes gym streaks work for some people. You appreciate detailed usage analytics and want to track progress quantitatively.
+        </p>
+
+        <p>
+          It's also the better tool if you use apps on Mac as well as iPhone, since Opal's cross-device blocking removes the easy workaround of just switching devices. If you've tried softer approaches and found them ineffective, Opal's enforced structure may be what you need. Some people genuinely need the wall.
+        </p>
+
+        <p>
+          The cost of entry is real, though. At roughly $99–$120/year, Opal is a subscription commitment. And if you're the type who uninstalls apps the first time they frustrate you — be honest with yourself — the hard lockout model may not survive contact with a Monday morning.
+        </p>
+
+        <h2>Who Should Use Sip &amp; Scroll</h2>
+
+        <p>
+          Sip & Scroll is the right choice if your relationship with social media is complicated rather than catastrophic. You enjoy scrolling — you just don't want it to eat three hours without you noticing. You've tried hard blockers and bounced off the frustration. You want to build a sustainable habit rather than a temporary restriction.
+        </p>
+
+        <p>
+          It's particularly well-suited for morning routines. If you've read about how <a href="screen-time-and-anxiety.html">early morning phone use hijacks your cortisol response</a>, the friction moment that Sip & Scroll inserts — sip of water, selfie, decision made — is exactly the kind of ritual that interrupts automatic behavior at the most critical point of the day. You're not locked out. You're asked to be present before you enter.
+        </p>
+
+        <p>
+          It's also the right choice if you're budget-conscious. Free to download means zero commitment risk — you can try it without deciding anything about your relationship with screens yet.
+        </p>
+
+        <p>
+          The honest limitation: if you need hard enforcement during scheduled work hours, Sip & Scroll won't replace Opal for that use case. Friction can always be bypassed. If your problem is that you <em>will</em> always bypass friction when you're stressed or bored, you may need the harder wall. That's a self-knowledge question, not a judgment.
+        </p>
+
+        <h2>The Verdict — It's About Your Brain Type</h2>
+
+        <p>
+          There is no universally better app. There is only the better app for how your brain responds to restriction.
+        </p>
+
+        <p>
+          If you're a scheduler — someone who plans their day in blocks, thrives on streaks, and needs a commitment device to enforce what you've already decided — Opal is worth the subscription. It was built for you.
+        </p>
+
+        <p>
+          If you're a ritualist — someone who wants to change the relationship rather than end it, who scrolls for decompression and isn't ready to go cold turkey, who's bounced off hard blockers before — Sip & Scroll is built for you. It doesn't try to make you less human. It just asks you to take a sip first.
+        </p>
+
+        <p>
+          The most common failure mode in screen time management isn't choosing the wrong app. It's choosing a tool whose philosophy contradicts your psychology and then blaming yourself when it doesn't work. You cannot out-willpower an algorithm engineered by thousands of people to mine your attention — but you can change the architecture of how you access it. The question is whether that architecture should look like a wall or a ritual. Only you know which one you'll actually live with.
+        </p>
+
+        <!-- CTA Box -->
+        <div
+          class="cta-box bg-gradient-to-r from-wellness-500 to-hydration-500 rounded-2xl p-8 my-12 text-white text-center"
+        >
+          <h3 class="text-2xl font-bold mb-4">Try the gentle approach — free.</h3>
+          <p class="mb-6 text-white/90">
+            Sip & Scroll turns your scroll sessions into a mindful ritual. No subscriptions, no punishment. Just a sip of water and 45 minutes of intentional access.
+          </p>
+          <a
+            href="https://apps.apple.com/us/app/sip-scroll-app-blocker/id6748373872"
+            class="inline-flex items-center bg-white text-gray-900 px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all duration-300"
+          >
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.74 1.18 0 2.21-.93 3.57-.84 1.56.12 2.8.84 3.5 1.93-2.71 1.66-2.16 5.38.68 6.66-.55 1.88-1.51 3.6-2.83 4.48zM12.01 4.5c-.09-2.28 1.91-4.5 4.1-4.5.32 2.67-2.54 4.68-4.1 4.5z"
+              />
+            </svg>
+            Download Sip &amp; Scroll — Free
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+    <script>
+      document.getElementById("footer-container").innerHTML = `
+        <footer class="bg-gray-900 text-white py-12 mt-16">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                <img
+                  src="../images/AppIcon.appiconset/40.png"
+                  alt="Sip & Scroll"
+                  class="w-8 h-8 rounded-lg"
+                />
+                <span class="text-xl font-bold">Sip & Scroll</span>
+              </div>
+              <div class="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
+                <a href="../blog/index.html" class="hover:text-wellness-400 transition-colors">Blog</a>
+                <a href="../privacy.html" class="hover:text-wellness-400 transition-colors">Privacy Policy</a>
+                <a href="../terms.html" class="hover:text-wellness-400 transition-colors">Terms of Service</a>
+                <a href="../support.html" class="hover:text-wellness-400 transition-colors">Support</a>
+              </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+              <p>&copy; 2026 Sip & Scroll. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+      `;
+    </script>
+  </body>
+</html>
