@@ -61,5 +61,12 @@
     "cluster": "app-reviews",
     "cluster_role": "supporting",
     "week_number": 14
+  },
+  {
+    "slug": "political-doomscrolling",
+    "published_date": "2026-04-06",
+    "cluster": "digital-wellness",
+    "cluster_role": "supporting",
+    "week_number": 15
   }
 ]
