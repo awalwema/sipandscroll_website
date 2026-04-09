@@ -68,5 +68,12 @@
     "cluster": "digital-wellness",
     "cluster_role": "supporting",
     "week_number": 15
+  },
+  {
+    "slug": "dopamine-detox-guide",
+    "published_date": "2026-04-08",
+    "cluster": "addiction-science",
+    "cluster_role": "supporting",
+    "week_number": 15
   }
 ]
